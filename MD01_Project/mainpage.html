@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinterest MainPage</title>
+    <link rel="stylesheet" href="./mainpage.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="pinterest">
+      <div class="left">
+        <a href="./mainpage.html" class="logo"
+          ><i class="fab fa-pinterest"></i
+        ></a>
+        <a href="./mainpage.html" class="home">Home</a>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle createBtn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Create
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="./create_idea_pin.html"
+                >Create Idea Pin</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="./create_pin.html">Create Pin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="search">
+        <i class="fas fa-search"></i>
+        <input type="search" name="" placeholder="Search" id="" />
+      </div>
+      <div class="right">
+        <a href="#" class="items"><i class="fas fa-bell"></i></a>
+        <a href="#" class="items"><i class="far fa-comment-dots"></i></a>
+        <a href="./userprofile.html" class="avatar">
+          <span class="usermail"></span>
+        </a>
+        <a href="./home.html" class="items-down"
+          ><i class="fas fa-chevron-down"></i
+        ></a>
+      </div>
+    </div>
+    <div class="container" id="container"></div>
+
+    <div class="footer">
+      <p>&copy; 2023 Pinterest Layout. All rights reserved.</p>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./mainpage.js"></script>
+  </body>
+</html>

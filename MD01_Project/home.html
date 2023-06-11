@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <i class="fa-brands fa-pinterest fa-2xl" style="color: #ff0000"></i>
+          <a href="#">Pinterest</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Business</a></li>
+        </ul>
+        <div class="login-btn">
+          <button
+            type="button"
+            class="btn btn-primary login-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Login
+          </button>
+        </div>
+        <div class="signup-btn">
+          <button
+            type="button"
+            class="btn btn-primary signupBtn"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            Sign Up
+          </button>
+        </div>
+      </nav>
+      <!-- start slider -->
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="./assets/img/123.png"
+              class="d-block w-100"
+              alt="./assets/img/123.png"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-1">weeknight dinner idea</h5>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="./assets/img/123.png"
+              class="d-block w-100"
+              alt="./assets/img/123.png"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-2">home decor idea</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/123.png"
+              class="d-block w-100"
+              alt="./assets/img/123.png"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-3">new look outfit</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/123.png"
+              class="d-block w-100"
+              alt="./assets/img/123.png"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-4">green thumb idea</h5>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- end slider -->
+      <div class="header-bottom">
+        <div class="main-1">
+          <img
+            alt="Orange chicken recipe"
+            class="img img-1"
+            fetchpriority="auto"
+            loading="auto"
+            src="https://s.pinimg.com/webapp/topRight-d0230035.png"
+          />
+          <img
+            alt="multiple chicken recipes"
+            class="img img-2"
+            fetchpriority="auto"
+            loading="auto"
+            src="https://s.pinimg.com/webapp/left-511a9304.png"
+          />
+
+          <img
+            alt="chicken rice recipe"
+            class="img img-3"
+            fetchpriority="auto"
+            loading="auto"
+            src="https://s.pinimg.com/webapp/right-88044782.png"
+          />
+          <img
+            alt="crispy chicken recipe"
+            class="img img-4"
+            fetchpriority="auto"
+            loading="auto"
+            src="https://s.pinimg.com/webapp/center-77497603.png"
+          />
+        </div>
+        <div class="main-1-1">
+          <div class="main-1-title">Search for an idea</div>
+          <div class="main-1-text">
+            What do you want to try next? Think of something you’re into—like
+            “easy chicken dinner”—and see what you find.
+          </div>
+          <div>
+            <a class="btn-1">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal đăng nhập -->
+    <div
+      class="modal fade login-modal"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="login">
+              <form id="login-form">
+                <i
+                  class="fa-brands fa-pinterest fa-2xl"
+                  style="color: #ff0000"
+                ></i>
+                <h1>Welcome to Printerest</h1>
+                <p>find new ideas to try</p>
+                <div class="email-login">
+                  <label for="inputEmail">Email</label>
+                  <input
+                    type="text"
+                    id="loginEmail"
+                    placeholder="email"
+                    name="email"
+                  />
+                </div>
+                <div class="password-login">
+                  <label for="inputPassword">Password</label>
+                  <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="password"
+                    name="password"
+                  />
+                </div>
+                <div class="error-message">Có lỗiiiiiiii</div>
+                <button type="submit" name="submit" class="continueBtn">
+                  Continue
+                </button>
+                <p>OR</p>
+                <button class="fbBtn">Continue with Facebook</button>
+                <button class="ggBtn">Continue with Google</button>
+                <span
+                  >By continuing, you agree to Pinterest's
+                  <div>
+                    <a href="/_/_/policy/terms-of-service/">Terms of Service</a>
+                    and acknowledge you've read our
+                    <a href="/_/_/policy/privacy-policy/">Privacy Policy</a>.
+                    <a href="https://policy.pinterest.com/notice-at-collection"
+                      >Notice at collection</a
+                    >
+                  </div>
+                  .
+                </span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal đăng kí -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="signup">
+              <form class="signup-form">
+                <i
+                  class="fa-brands fa-pinterest fa-2xl"
+                  style="color: #ff0000"
+                ></i>
+                <h1>Welcome to Printerest</h1>
+                <p>find new ideas to try</p>
+                <div class="email-signup">
+                  <label for="inputEmail">Email</label>
+                  <input
+                    type="text"
+                    id="inputEmail"
+                    placeholder="email"
+                    name="email"
+                  />
+                </div>
+                <div class="password-signup">
+                  <label for="inputPassword">Password</label>
+                  <input
+                    type="password"
+                    id="inputPassword"
+                    placeholder="create a password"
+                    name="password"
+                  />
+                </div>
+                <div class="birthdate-signup">
+                  <label for="inpurBirthdate">Birthdate</label>
+                  <input
+                    type="date"
+                    id="inputBirthdate"
+                    placeholder="mm/dd/yyyy"
+                    name="birthdate"
+                  />
+                </div>
+                <div class="error-signup">Có lỗiiiiiiii</div>
+                <button id="btn-continue" class="continueBtn">Continue</button>
+                <p>OR</p>
+                <button class="fbBtn">Continue with Facebook</button>
+                <button class="ggBtn">Continue with Google</button>
+                <span
+                  >By continuing, you agree to Pinterest's
+                  <div>
+                    <a href="/_/_/policy/terms-of-service/">Terms of Service</a>
+                    and acknowledge you've read our
+                    <a href="/_/_/policy/privacy-policy/">Privacy Policy</a>.
+                    <a href="https://policy.pinterest.com/notice-at-collection"
+                      >Notice at collection</a
+                    >
+                  </div>
+                  .
+                </span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./home.js"></script>
+  </body>
+</html>
